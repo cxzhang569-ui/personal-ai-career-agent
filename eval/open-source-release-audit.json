@@ -1,0 +1,260 @@
+{
+  "date": "2026-10-03",
+  "status": "ready-for-reviewed-public-source",
+  "envLocalRead": false,
+  "gitHistory": "none",
+  "pushed": false,
+  "deployed": false,
+  "privateFiles": {
+    "protectedKbAndIndexUnchanged": 7,
+    "historicalEvalRetained": 36,
+    "excluded": [
+      ".env.local",
+      "knowledge/*.md (except README)",
+      "knowledge/local",
+      "knowledge/private",
+      "data/indexes",
+      "eval/private",
+      "private validation scripts",
+      "screenshots",
+      "model weights",
+      ".cache",
+      "logs",
+      "generated builds"
+    ]
+  },
+  "example": {
+    "fictional": true,
+    "markdownFiles": 6,
+    "chunks": 13,
+    "dimensions": 512,
+    "normalized": true,
+    "ingest": "pass",
+    "retrievalQueriesPassed": 3,
+    "dataset": {
+      "positive": 9,
+      "unknown": 1
+    }
+  },
+  "verification": {
+    "freshFrozenInstall": "pass",
+    "modelFreeTest": {
+      "pass": 69,
+      "skip": 2,
+      "fail": 0
+    },
+    "realModelTest": {
+      "pass": 71,
+      "skip": 0,
+      "fail": 0
+    },
+    "typecheck": "pass",
+    "lint": "pass",
+    "build": "pass",
+    "originalFinalBuild": "pass",
+    "publicVectorEvaluation": "pass",
+    "publicCompareEvaluation": "pass",
+    "publicCandidateRecall": "pass",
+    "browserPage": {
+      "httpStatus": 200,
+      "identity": "fictional Alex Chen"
+    },
+    "realDeepSeekCalled": false,
+    "modelPrepare": "pass-from-checksummed-local-cache",
+    "modelVerify": "pass",
+    "coldNetworkModelDownload": "failed-in-current-environment",
+    "hostedCi": "not-run",
+    "revisedDockerBuild": "not-run"
+  },
+  "risks": {
+    "p0": [],
+    "p1": [
+      "Validate cold network model download",
+      "Run hosted Linux CI and revised example Docker build",
+      "Confirm conversion redistribution notices before publishing model-containing images",
+      "Review first staged commit and enable private security reporting"
+    ]
+  },
+  "answers": [
+    {
+      "number": 1,
+      "answer": "Real API key found? No detected hardcoded real key in reviewed source; original environment values were not inspected."
+    },
+    {
+      "number": 2,
+      "answer": ".env.local ignored? Yes, verified with git check-ignore, excluded by export and Docker context."
+    },
+    {
+      "number": 3,
+      "answer": "Suspected secret leak? No high-confidence finding in reviewed public source; heuristics still require human staged review."
+    },
+    {
+      "number": 4,
+      "answer": "Existing Git history? No existing Git history."
+    },
+    {
+      "number": 5,
+      "answer": "Sensitive Git history? Not applicable; no history exists."
+    },
+    {
+      "number": 6,
+      "answer": "Private exclusions? Root KB, indexes, env files, historical eval, chats/traces/images, private scripts, caches, logs, model weights and generated builds."
+    },
+    {
+      "number": 7,
+      "answer": "Real KB handling? Retained unchanged locally, ignored, no longer default, excluded from export."
+    },
+    {
+      "number": 8,
+      "answer": "Example KB complete? Yes, all six files."
+    },
+    {
+      "number": 9,
+      "answer": "Fully fictional? Yes, fictional Alex Chen and invented projects/education/practice."
+    },
+    {
+      "number": 10,
+      "answer": "Index ignored? Yes, all data artifacts except .gitkeep."
+    },
+    {
+      "number": 11,
+      "answer": "Personal chunk text submitted? No, only fictional example Markdown; no index is exported."
+    },
+    {
+      "number": 12,
+      "answer": "eval/private? 36 historical artifacts retained there, ignored and not exported."
+    },
+    {
+      "number": 13,
+      "answer": "Public reports? retrieval-benchmark, reranker-experiment, system-evaluation and sanitized release audit."
+    },
+    {
+      "number": 14,
+      "answer": "README complete? Yes."
+    },
+    {
+      "number": 15,
+      "answer": "Architecture? Mermaid diagram included."
+    },
+    {
+      "number": 16,
+      "answer": "Evaluation story? Baseline through E2E progression included."
+    },
+    {
+      "number": 17,
+      "answer": "Tradeoffs? Local BGE, JSON, persistent Node and default-off reranking explained."
+    },
+    {
+      "number": 18,
+      "answer": "Quick start verified? Install/checks, cache-assisted model preparation, ingest, retrieval and browser page passed; cold network download did not pass."
+    },
+    {
+      "number": 19,
+      "answer": "model:prepare usable? Passed from verified cache; remote access is a remaining prerequisite."
+    },
+    {
+      "number": 20,
+      "answer": "Example ingestion? Passed, 13/13 vectors."
+    },
+    {
+      "number": 21,
+      "answer": "Example retrieval? Passed three queries and public evaluation."
+    },
+    {
+      "number": 22,
+      "answer": "MIT? Added."
+    },
+    {
+      "number": 23,
+      "answer": "CONTRIBUTING? Added."
+    },
+    {
+      "number": 24,
+      "answer": "SECURITY? Added, no invented contact address."
+    },
+    {
+      "number": 25,
+      "answer": "Actions? Added, not yet hosted-run."
+    },
+    {
+      "number": 26,
+      "answer": "CI without DeepSeek key? Yes; local clean-copy equivalent checks passed without a real key."
+    },
+    {
+      "number": 27,
+      "answer": "CI without private KB? Yes, synthetic fixtures only."
+    },
+    {
+      "number": 28,
+      "answer": "Tests contain private information? Reviewed public fixtures use synthetic content; no private source or chat text included."
+    },
+    {
+      "number": 29,
+      "answer": "Personal Windows absolute paths? None detected in exported files."
+    },
+    {
+      "number": 30,
+      "answer": "Local username leakage? None detected in exported files."
+    },
+    {
+      "number": 31,
+      "answer": "Weights excluded? Yes, only manifest published."
+    },
+    {
+      "number": 32,
+      "answer": "Cache excluded? Yes."
+    },
+    {
+      "number": 33,
+      "answer": "Browser/public inspected? Public assets inspected; only .gitkeep exported; fictional page opened in browser."
+    },
+    {
+      "number": 34,
+      "answer": "Sensitive screenshots? Local old screenshots excluded; no screenshots published."
+    },
+    {
+      "number": 35,
+      "answer": "Fresh install? Frozen-lockfile installation passed."
+    },
+    {
+      "number": 36,
+      "answer": "Tests? 69 model-free passes + 2 optional skips; real-model run 71/71 passed."
+    },
+    {
+      "number": 37,
+      "answer": "Typecheck? Passed."
+    },
+    {
+      "number": 38,
+      "answer": "Lint? Passed."
+    },
+    {
+      "number": 39,
+      "answer": "Build? Clean-copy no-model build and original final build passed."
+    },
+    {
+      "number": 40,
+      "answer": "Fresh clone equivalent? Passed local source-copy install/checks; no private artifacts copied."
+    },
+    {
+      "number": 41,
+      "answer": "Public GitHub ready? Yes, reviewed sanitized source only; no push performed."
+    },
+    {
+      "number": 42,
+      "answer": "Remaining P0? None identified for source publication."
+    },
+    {
+      "number": 43,
+      "answer": "P1? Cold download, hosted CI/revised Docker, image redistribution notices and first staged review/security reporting."
+    },
+    {
+      "number": 44,
+      "answer": "Changed files? Listed above; private records retained locally."
+    },
+    {
+      "number": 45,
+      "answer": "First commit contents? Only publication manifest allowlisted source/docs/config/example/tests/public summaries. Review actual staged contents; never force-add ignored files. Do not commit env, indexes, model artifacts, cache or private eval."
+    }
+  ]
+}

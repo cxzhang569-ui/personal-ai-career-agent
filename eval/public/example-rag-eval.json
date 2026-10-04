@@ -1,0 +1,137 @@
+[
+  {
+    "id": "background-001",
+    "question": "请介绍 Alex 的背景和技术方向。",
+    "category": "profile",
+    "evaluation_type": "retrieval",
+    "primary_relevant": [
+      {
+        "source": "profile.md",
+        "section": "Background"
+      }
+    ],
+    "supporting_relevant": [],
+    "should_have_answer": true
+  },
+  {
+    "id": "project-001",
+    "question": "Campus Study Assistant 解决什么问题？",
+    "category": "project",
+    "evaluation_type": "retrieval",
+    "primary_relevant": [
+      {
+        "source": "projects.md",
+        "section": "Campus Study Assistant — Overview"
+      }
+    ],
+    "supporting_relevant": [],
+    "should_have_answer": true
+  },
+  {
+    "id": "project-002",
+    "question": "Campus Study Assistant 的 RAG 流程是什么？",
+    "category": "rag",
+    "evaluation_type": "retrieval",
+    "primary_relevant": [
+      {
+        "source": "projects.md",
+        "section": "Campus Study Assistant — Architecture"
+      }
+    ],
+    "supporting_relevant": [],
+    "should_have_answer": true
+  },
+  {
+    "id": "project-003",
+    "question": "Campus Study Assistant 的技术难点如何处理？",
+    "category": "project",
+    "evaluation_type": "retrieval",
+    "primary_relevant": [
+      {
+        "source": "projects.md",
+        "section": "Campus Study Assistant — Challenges"
+      }
+    ],
+    "supporting_relevant": [],
+    "should_have_answer": true
+  },
+  {
+    "id": "python-001",
+    "question": "Alex 有哪些 Python 实践？",
+    "category": "skill",
+    "evaluation_type": "retrieval",
+    "primary_relevant": [
+      {
+        "source": "skills.md",
+        "section": "Python"
+      }
+    ],
+    "supporting_relevant": [],
+    "should_have_answer": true
+  },
+  {
+    "id": "career-001",
+    "question": "Alex 希望寻找什么工作？",
+    "category": "career",
+    "evaluation_type": "retrieval",
+    "primary_relevant": [
+      {
+        "source": "career.md",
+        "section": "Career Direction"
+      }
+    ],
+    "supporting_relevant": [],
+    "should_have_answer": true
+  },
+  {
+    "id": "education-001",
+    "question": "Alex 学习什么课程？",
+    "category": "education",
+    "evaluation_type": "retrieval",
+    "primary_relevant": [
+      {
+        "source": "education.md",
+        "section": "Study Program"
+      }
+    ],
+    "supporting_relevant": [],
+    "should_have_answer": true
+  },
+  {
+    "id": "project-004",
+    "question": "Document QA Tool 的用途是什么？",
+    "category": "project",
+    "evaluation_type": "retrieval",
+    "primary_relevant": [
+      {
+        "source": "projects.md",
+        "section": "Document QA Tool"
+      }
+    ],
+    "supporting_relevant": [],
+    "should_have_answer": true
+  },
+  {
+    "id": "project-005",
+    "question": "AI Notes Search 比较了什么方法？",
+    "category": "project",
+    "evaluation_type": "retrieval",
+    "primary_relevant": [
+      {
+        "source": "projects.md",
+        "section": "AI Notes Search"
+      }
+    ],
+    "supporting_relevant": [],
+    "should_have_answer": true
+  },
+  {
+    "id": "unknown-001",
+    "question": "Alex 的 GPA 是多少？",
+    "category": "negative",
+    "evaluation_type": "unknown",
+    "primary_relevant": [],
+    "supporting_relevant": [],
+    "should_have_answer": false
+  }
+]

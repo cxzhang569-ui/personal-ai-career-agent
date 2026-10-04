@@ -1,0 +1,17 @@
+{
+  "model": "BAAI/bge-small-zh-v1.5",
+  "export": "onnx-community/bge-small-zh-v1.5-ONNX",
+  "revision": "9507db33464b5da99a532ac26b2a251767cbc62b",
+  "device": "cpu",
+  "dtype": "fp32",
+  "dimensions": 512,
+  "pooling": "cls",
+  "normalize": true,
+  "files": [
+    {"path":"config.json","bytes":904,"sha256":"34fa1ea6278c257de3cc8ce7e9bdc48647b802145a9da0fc32e95db620efd04f"},
+    {"path":"tokenizer.json","bytes":362603,"sha256":"3d09c84ebd10306706a79a8276b3ab736a40d8ec03251c7639f4e52c3a1a4f8e"},
+    {"path":"tokenizer_config.json","bytes":414,"sha256":"7e3bd6113f18c20975eaa8e8cc03c95b727fd83d6357f8e171e22b3736bf706d"},
+    {"path":"onnx/model.onnx","bytes":41689,"sha256":"69b353bb2aa2d09ab606ddbbc35437b03c843615a6bff28216a37fee7309c2aa"},
+    {"path":"onnx/model.onnx_data","bytes":94765056,"sha256":"e72da961b03613124aa11317470c995ca197651a9d7f6be2b0e90aad92f71df0"}
+  ]
+}

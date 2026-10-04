@@ -1,0 +1,49 @@
+{
+  "name": "personal-career-agent",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "node scripts/start-production.mjs",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "model:prepare": "tsx scripts/prepare-model.ts",
+    "model:verify": "tsx scripts/prepare-model.ts --verify",
+    "ingest": "tsx scripts/ingest.ts",
+    "check:rag": "tsx --conditions=react-server scripts/check-example.ts",
+    "eval:rag": "tsx --conditions=react-server scripts/evaluate-public.ts vector",
+    "eval:compare": "tsx --conditions=react-server scripts/evaluate-public.ts compare",
+    "eval:candidate-recall": "tsx --conditions=react-server scripts/evaluate-public.ts candidate",
+    "eval:reranker": "tsx --conditions=react-server scripts/evaluate-public.ts reranker",
+    "eval:reranker-pareto": "tsx --conditions=react-server scripts/evaluate-public.ts pareto",
+    "test": "tsx --conditions=react-server --test tests/*.test.ts",
+    "release:audit": "node scripts/oss-release.mjs",
+    "release:export": "node scripts/oss-release.mjs --export"
+  },
+  "dependencies": {
+    "@huggingface/transformers": "4.3.0",
+    "@next/env": "16.3.8",
+    "next": "16.3.8",
+    "openai": "7.25.0",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "server-only": "^0.0.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.0",
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "eslint": "^9.0.0",
+    "eslint-config-next": "16.3.8",
+    "tailwindcss": "^4.1.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.0"
+  },
+  "engines": {
+    "node": ">=24.19.0"
+  },
+  "license": "MIT",
+  "packageManager": "pnpm@11.19.0"
+}
