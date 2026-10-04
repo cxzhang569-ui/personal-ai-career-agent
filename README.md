@@ -1,5 +1,7 @@
 # Personal AI Career Agent
 
+[![CI](https://github.com/cxzhang569-ui/personal-ai-career-agent/actions/workflows/ci.yml/badge.svg)](https://github.com/cxzhang569-ui/personal-ai-career-agent/actions/workflows/ci.yml)
+
 A source-grounded personal AI agent built with local RAG, BGE embeddings, DeepSeek streaming, retrieval evaluation, and optional cross-encoder reranking.
 
 与静态个人主页不同，访客可以询问候选人的项目、技能与求职方向。系统从结构化知识库检索证据，流式回答并显示来源。公开版本使用完全虚构的 Alex Chen 示例资料。
@@ -38,8 +40,8 @@ BGE handles Embedding / Retrieval; DeepSeek handles query rewrite and Answer Gen
 Use Node **24.19+** and pnpm **11.19.0**. Initial model preparation needs access to Hugging Face; inference then runs locally. Allow at least 2 GiB RAM for the small-scale runtime.
 
 ```bash
-git clone <your-repository-url>
-cd <repository-directory>
+git clone https://github.com/cxzhang569-ui/personal-ai-career-agent.git
+cd personal-ai-career-agent
 corepack enable
 corepack prepare pnpm@11.19.0 --activate
 pnpm install --frozen-lockfile
